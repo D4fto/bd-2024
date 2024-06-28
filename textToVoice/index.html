@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <textarea id="fala" cols="40" rows="10"></textarea>
+    <input type="range" name="rate" id="rate" max="10" min="0.1" oninput="rateout.value=rate.value" step="0.1"><output id="rateout"></output>
+    <input type="range" name="pitch" id="pitch" max="2" min="0" oninput="pitchout.value=pitch.value" step="0.1"><output id="pitchout"></output>
+    <button onclick="falar()">falar</button>
+</body>
+</html>
